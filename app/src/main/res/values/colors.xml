@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#F0EEEF</color>
+    <color name="cakoLogoBackground">#120801</color>
+    <color name="colorAccent">#F57F17</color>
+    <color name="CakoColorForLaunchScreen">#270949</color>
+    <color name="CardColor1">#FDD787</color>
+    <color name="ColorForText">#678C57</color>
+    <color name="CardColor2">#C7BAD2</color>
+    <color name="ColorForTabMenu">#6C5637</color>
+    <color name="ColorForTextViewBackgroundForLongClickAct">#FDD787</color>
+    <color name="SkinColor">#FCD788</color>
+
+
+</resources>

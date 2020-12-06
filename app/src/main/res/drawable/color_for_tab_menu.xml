@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval"
+    android:tint="@color/ColorForTabMenu"
+    android:visible="true">
+    <size android:width="2dp" android:height="2dp"/>
+    <solid android:color="@color/ColorForTabMenu" />
+    <padding android:bottom="1dp" />
+</shape>

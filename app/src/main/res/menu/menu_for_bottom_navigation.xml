@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home_menuitem_for_firstAct"
+        android:icon="@drawable/ic_outline_home_24"
+        android:title="Home"/>
+    <item
+        android:id="@+id/cart_menuitem_for_firstAct"
+        android:icon="@drawable/ic_outline_shopping_cart_24"
+        android:title="Cart"/>
+    <item
+        android:id="@+id/loved_menuitem_for_firstAct"
+        android:icon="@drawable/ic_heart"
+        android:title="Loved"/>
+    <item
+        android:id="@+id/userInfo_menuitem_for_firstAct"
+        android:icon="@drawable/ic_baseline_person_outline_24"
+        android:title="User Info"/>
+</menu>
