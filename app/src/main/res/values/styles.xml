@@ -6,6 +6,25 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+    <style name="AppThemeForDark1" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/Cako_background</item>
+        <item name="android:textSize">@dimen/cart_toolbar_text_size</item>
+        <item name="fontFamily">@font/playfair_display_bold_italic</item>
+        <item name="navigationIcon">@dimen/cart_nav_icon_size</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppThemeForDark2" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/Cako_background</item>
+        <item name="android:textSize">@dimen/cart_toolbar_text_size</item>
+        <item name="fontFamily">@font/playfair_display_bold_italic</item>
+        <item name="navigationIcon">@dimen/cart_nav_icon_size</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark2</item>
+        <item name="iconTint">@android:color/white</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
 
     <style name="NoActionBarTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
@@ -18,5 +37,15 @@
         <item name="android:textSize">@dimen/cart_toolbar_text_size</item>
         <item name="fontFamily">@font/playfair_display_bold_italic</item>
         <item name="navigationIcon">@dimen/cart_nav_icon_size</item>
+    </style>
+
+    <style name="toolbarStyleForDrag">
+        <item name="android:textSize">@dimen/cart_toolbar_text_size</item>
+        <item name="fontFamily">@font/playfair_display_bold_italic</item>
+        <item name="navigationIcon">@dimen/cart_nav_icon_size</item>
+        <item name="android:background">@color/SkinColor</item>
+    </style>
+    <style name="styleForLunch" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#1E0909</item>
     </style>
 </resources>

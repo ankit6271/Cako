@@ -16,15 +16,20 @@
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbarForofferActivity"
             android:layout_width="match_parent"
-            android:layout_height="?actionBarSize" />
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            app:titleTextAppearance="@style/toolbarStyle"
+            app:titleTextColor="@android:color/black"/>
 
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tabLayoutInOffers"
-            android:layout_width="409dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/appBar">
+            app:layout_constraintTop_toBottomOf="@+id/appBar"
+            app:tabGravity="fill"
+            >
 
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"

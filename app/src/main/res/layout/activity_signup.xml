@@ -7,7 +7,6 @@
     android:background="@android:color/white">
 
     <TextView
-        android:textSize="16sp"
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -15,6 +14,7 @@
         android:layout_marginTop="10dp"
         android:text="Mobile Number"
         android:textColor="@color/TextColorForLogSign"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextForEmailAddressInSignup" />
@@ -34,7 +34,6 @@
         app:srcCompat="@drawable/cake" />
 
     <TextView
-        android:textSize="16sp"
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -42,11 +41,12 @@
         android:layout_marginTop="10dp"
         android:text="Email"
         android:textColor="@color/TextColorForLogSign"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextForNameInSignup" />
+
     <TextView
-        android:textSize="16sp"
         android:id="@+id/textViewNameInSignUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -54,12 +54,12 @@
         android:layout_marginTop="13dp"
         android:text="Name"
         android:textColor="@color/TextColorForLogSign"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
     <TextView
-        android:textSize="16sp"
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -67,6 +67,7 @@
         android:layout_marginTop="10dp"
         android:text="Password"
         android:textColor="@color/TextColorForLogSign"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextForPhoneNoInSignup" />
@@ -80,46 +81,42 @@
         android:layout_marginEnd="10dp"
         android:background="@drawable/round_rect_button_for_cart_activity"
         android:text="Sign Up"
-        android:textSize="16sp"
         android:textColor="@android:color/white"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextForPasswordInSignup" />
 
     <EditText
-        android:layout_marginEnd="10dp"
         android:id="@+id/editTextForEmailAddressInSignup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="3dp"
+        android:layout_marginEnd="10dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
         android:textColor="@color/BrownUsed"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
     <EditText
-        android:layout_marginEnd="10dp"
         android:id="@+id/editTextForNameInSignup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="3dp"
+        android:layout_marginEnd="10dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
         android:textColor="@color/BrownUsed"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewNameInSignUp" />
 
     <EditText
-        android:layout_marginEnd="10dp"
         android:id="@+id/editTextForPasswordInSignup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="3dp"
+        android:layout_marginEnd="10dp"
         android:ems="10"
         android:inputType="textPassword"
         android:textColor="@color/BrownUsed"
@@ -127,12 +124,12 @@
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
     <TextView
-        android:fontFamily="@font/playfair_display_bold_italic"
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="5dp"
+        android:fontFamily="@font/playfair_display_bold_italic"
         android:text="Sign Up"
         android:textColor="@android:color/black"
         android:textSize="23sp"
@@ -141,11 +138,11 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <TextView
-        android:fontFamily="@font/playfair_display_bold_italic"
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
+        android:fontFamily="@font/playfair_display_bold_italic"
         android:text="Enter your credentials to continue."
         android:textColor="@color/BrownUsed"
         android:textSize="16sp"
@@ -153,12 +150,11 @@
         app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
     <EditText
-        android:layout_marginEnd="10dp"
         android:id="@+id/editTextForPhoneNoInSignup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="3dp"
+        android:layout_marginEnd="10dp"
         android:ems="10"
         android:inputType="phone"
         android:textColor="@color/BrownUsed"
@@ -166,15 +162,29 @@
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
     <TextView
+        android:gravity="center"
         android:id="@+id/textView14"
-        android:textSize="13sp"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
         android:layout_marginTop="6dp"
         android:minLines="2"
         android:text="By continuing you agree to our Terms of Service and Privacy Policy."
         android:textColor="@color/BrownUsed"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonForSignupInSignup" />
+    <TextView
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:id="@+id/textViewForIncorrectInSignUp"
+        android:fontFamily="@font/abhaya_libre_semibold"
+        android:textColor="#151515"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="58dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
 </androidx.constraintlayout.widget.ConstraintLayout>

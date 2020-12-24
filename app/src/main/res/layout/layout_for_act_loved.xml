@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/constraint"
+    android:background="#F4EDE9"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:padding="10dp">
@@ -10,43 +11,48 @@
         app:cardElevation="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardBackgroundColor="@color/colorPrimaryDark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:layout_marginBottom="5dp"
+            android:scaleType="fitXY"
+            android:layout_marginBottom="10dp"
             android:id="@+id/ImageForLoved"
-            android:layout_width="80dp"
-            android:layout_height="90dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="5dp"
+            android:layout_width="90dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
             android:src="@drawable/cako_logo_image2" />
 
         <TextView
+            android:fontFamily="@font/playfair_display_bold_italic"
             android:id="@+id/textViewForItemNameInLoved"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="120dp"
+            android:layout_width="285dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="105dp"
             android:layout_marginTop="15dp"
-            android:text="Black vellwet" />
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:text="Black vellwe5555             5     456666t" />
 
         <TextView
             android:id="@+id/textViewForPieceInfoInLoved"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="120dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginStart="105dp"
+            android:layout_marginTop="48dp"
+            android:textSize="15sp"
             android:text="1 per KG" />
 
         <TextView
             android:id="@+id/textViewForPriceInLoved"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="120dp"
-            android:layout_marginTop="65dp"
+            android:layout_marginStart="105dp"
+            android:layout_marginTop="70dp"
+            android:textSize="15sp"
             android:text="$120" />
 
         <Button
@@ -58,17 +64,17 @@
             android:padding="10dp"
             android:background="@color/colorAccent"
             android:drawableStart="@drawable/ic_baseline_shopping_cart_24"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="60dp"
             android:layout_marginStart="250dp"/>
         <TextView
             android:id="@+id/textViewForStaticDetailInLoved"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="105dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="114dp"
             android:text="Details:-"
-            android:textSize="19sp"
-            android:textColor="#364702"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
             android:textStyle="bold"
 
             />
@@ -76,10 +82,13 @@
             android:id="@+id/textViewForDynamicProductDetailInLoved"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="130dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="136dp"
+            android:layout_marginBottom="10dp"
             android:ellipsize="end"
-            android:maxLines="4"
+            android:maxLines="7"
+            android:justificationMode="inter_word"
+            android:textSize="14sp"
             android:text="Every cake we offer is handcrafted and since each chef has his/her own way of baking and designing a cake, there might be slight variation in the product in terms of design and shape."
             />
 

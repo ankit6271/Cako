@@ -7,17 +7,18 @@
     android:background="@color/cakoAppIcon_background">
 
     <com.google.android.material.appbar.AppBarLayout
+        android:background="@color/SkinColor"
         android:id="@+id/appBarInLong"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent">
 
         <androidx.appcompat.widget.Toolbar
+            app:titleTextColor="@android:color/black"
             android:id="@+id/toolbarForLong"
             android:layout_width="match_parent"
-            android:layout_height="?actionBarSize"
-            android:background="@color/SkinColor"
-            app:title="" />
+            android:layout_height="50dp"
+            android:background="@color/SkinColor"/>
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.cardview.widget.CardView
@@ -34,14 +35,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/curved_background_for_long"
-            android:paddingBottom="10dp"
-            >
+            android:paddingBottom="25dp">
 
             <ImageView
-                android:layout_marginTop="15dp"
                 android:id="@+id/imageForLongPressedAct"
-                android:layout_width="310dp"
-                android:layout_height="355dp"
+                android:layout_width="370dp"
+                android:layout_height="385dp"
+                android:layout_marginTop="5dp"
                 android:scaleType="fitXY"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -52,11 +52,12 @@
                 android:id="@+id/textViewForQuantityInLong"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="65dp"
-                android:layout_marginTop="25dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="23dp"
                 android:text="Select Quantity :"
-                android:textColor="@android:color/black"
-                android:textSize="20dp"
+                android:textColor="#316E1A"
+                android:textSize="20sp"
+                android:textStyle="bold"
                 app:layout_constraintEnd_toStartOf="@+id/constraintLayoutForSelectionButton"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/imageForLongPressedAct"
@@ -67,15 +68,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="18.5dp"
                 app:layout_constraintStart_toEndOf="@+id/textViewForQuantityInLong"
                 app:layout_constraintTop_toBottomOf="@+id/imageForLongPressedAct">
 
                 <Button
                     android:id="@+id/MinusButton"
-                    android:layout_width="35dp"
-                    android:layout_height="35dp"
-                    android:background="@drawable/round_minus_plus_button_for_cart_activity"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/round_rect_button_for_cart_activity"
+                    android:backgroundTint="@android:color/white"
+                    android:gravity="center"
                     android:text="-"
                     android:textColor="@color/colorAccent"
                     android:textSize="25sp"
@@ -85,12 +88,15 @@
 
                 <TextView
                     android:id="@+id/textViewForPieceForCheckoutFromCart"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
+                    android:background="@drawable/round_rect_button_for_cart_activity"
+                    android:backgroundTint="#EAAD8F"
+                    android:gravity="center"
                     android:text="1"
-                    android:textColor="@android:color/black"
+                    android:textColor="#316E1A"
                     android:textSize="18sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/PlusButton"
@@ -99,9 +105,10 @@
 
                 <Button
                     android:id="@+id/PlusButton"
-                    android:layout_width="35dp"
-                    android:layout_height="35dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
                     android:background="@drawable/round_minus_plus_button_for_cart_activity"
+                    android:gravity="center"
                     android:text="+"
                     android:textColor="@color/colorAccent"
                     android:textSize="25sp"
@@ -116,9 +123,9 @@
             <ImageButton
                 android:id="@+id/buttonForLovedInLong"
                 android:layout_width="130dp"
-                android:layout_height="50dp"
+                android:layout_height="55dp"
                 android:layout_marginStart="30dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="16.5dp"
                 android:background="@drawable/round_rect_button_for_cart_activity"
                 android:backgroundTint="@android:color/white"
                 app:layout_constraintStart_toStartOf="parent"
@@ -127,12 +134,13 @@
 
 
             <Button
+                android:id="@+id/buttonForAddToCartInOnDrag"
                 android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:layout_marginStart="20dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="15dp"
                 android:background="@drawable/round_rect_button_for_cart_activity"
                 android:drawableEnd="@drawable/ic_baseline_shopping_cart_24"
-                android:drawablePadding="5dp"
+                android:drawablePadding="10dp"
                 android:padding="10dp"
                 android:text="Add To CArt"
                 android:textAlignment="viewStart"
@@ -143,6 +151,7 @@
     </androidx.cardview.widget.CardView>
 
     <TextView
+        android:fontFamily="@font/playfair_display_bold_italic"
         android:id="@+id/textForCakeInLong"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -150,7 +159,7 @@
         android:layout_marginTop="5dp"
         android:text="Butterscotch"
         android:textColor="#316E1A"
-        android:textSize="17sp"
+        android:textSize="19sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/cardForLongSelect" />
@@ -160,7 +169,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="3dp"
+        android:layout_marginTop="2dp"
         android:text="$90"
         android:textColor="@android:color/black"
         android:textSize="14sp"
@@ -173,7 +182,7 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:background="@color/colorAccent"
         app:layout_constraintTop_toBottomOf="@+id/textForCakePriceInLong" />
@@ -183,6 +192,7 @@
         android:id="@+id/cardViewForLong"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
         app:cardElevation="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -192,18 +202,17 @@
             android:id="@+id/constraintLayoutForLong"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
             android:background="@color/cako_app_icon_background">
 
             <TextView
-
-                android:id="@+id/textForCakeDetailInLong"
+                android:id="@+id/textViewForDetailText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="5dp"
                 android:text="Details"
                 android:textColor="#316E1A"
-                android:textSize="17sp"
+                android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -215,7 +224,7 @@
                 android:layout_marginEnd="10dp"
                 android:padding="2dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@id/textForCakeDetailInLong" />
+                app:layout_constraintTop_toTopOf="@id/textViewForDetailText" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:visibility="gone"
@@ -224,19 +233,19 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="12dp"
-                android:padding="1dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textForCakeDetailInLong">
+                app:layout_constraintTop_toBottomOf="@+id/textViewForDetailText">
 
                 <TextView
-                    android:id="@+id/textViewForHouseAddress"
+                    android:id="@+id/textForCakeDetailInLong"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ellipsize="end"
-                    android:maxLines="3"
-                    android:text="Fully loaded cake with butter on half and fresh cream which can make ur life cool and u will be mesmerized with the lookwe gave toour cake"
-                    android:textSize="13sp"
+                    android:justificationMode="inter_word"
+                    android:maxLines="8"
+                    android:text="From Barbie doll to superhero cake, from makeup-inspired to sporty deliciousness, theme cakes have become the delight of all occasions. These theme cakes are preciously crafted in various flavours like Vanilla, Butterscotch, Strawberry, etc. Make your occasions grander with the delicious range of designer cakes from Cako that are sure to infuse the optimum sweetness in every special celebration."
+                    android:textSize="12.5sp"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />

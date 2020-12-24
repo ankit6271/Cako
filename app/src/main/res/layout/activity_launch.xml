@@ -5,12 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
+    android:theme="@style/styleForLunch"
     tools:context=".LaunchActivity">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
         android:layout_marginBottom="4dp"
         android:text="@string/From"
         android:textColor="@color/colorAccent"
@@ -38,7 +40,7 @@
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="match_parent"
-        android:layout_height="550dp"
+        android:layout_height="730dp"
         android:background="@color/cakoLogoBackground"
         android:contentDescription="@string/app_name"
         android:src="@drawable/cako_logo_image"

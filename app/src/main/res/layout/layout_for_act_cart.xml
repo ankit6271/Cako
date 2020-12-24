@@ -4,13 +4,13 @@
     android:id="@+id/constraint"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+android:background="@color/ColorForBackgroundInCard"
     android:padding="10dp">
 
     <androidx.cardview.widget.CardView
-        app:cardElevation="10dp"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        app:cardBackgroundColor="@color/colorPrimaryDark"
+        android:layout_height="wrap_content"
+        app:cardElevation="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -18,73 +18,87 @@
 
         <ImageView
             android:id="@+id/ImageForCart"
-            android:layout_width="80dp"
+            android:layout_width="90dp"
             android:layout_height="90dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:scaleType="fitXY"
             android:src="@drawable/cako_logo_image2" />
 
         <TextView
+            android:fontFamily="@font/playfair_display_bold_italic"
             android:id="@+id/textViewForItemNameInCart"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="273dp"
+            android:layout_height="30dp"
             android:layout_marginLeft="120dp"
-            android:layout_marginTop="15dp"
-            android:text="Black vellwet" />
+            android:layout_marginTop="12dp"
+            android:text="Black vellwetkkkkkkkkkkkkkkkkk"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/textViewForPieceInfoInCart"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="120dp"
-            android:layout_marginTop="40dp"
-            android:text="1 per KG" />
+            android:layout_marginTop="45dp"
+            android:text="1 per KG"
+            android:textSize="15sp" />
 
         <TextView
             android:id="@+id/textViewForPriceInCart"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="120dp"
-            android:layout_marginTop="65dp"
-            android:text="$120" />
+            android:layout_marginTop="69dp"
+            android:text="$120"
+            android:textSize="15sp" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_marginTop="59dp"
+            android:layout_marginStart="290dp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="260dp"
-            android:layout_marginTop="30dp">
+            android:layout_height="wrap_content">
 
             <Button
+                android:backgroundTint="@color/colorAccent"
+                android:gravity="center"
                 android:id="@+id/MinusButton"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="37dp"
+                android:layout_height="37dp"
                 android:background="@drawable/round_minus_plus_button_for_cart_activity"
                 android:text="-"
-                android:textSize="30dp"
+                android:textColor="@color/cakoAppIcon_background"
+                android:textSize="24sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
+                android:textColor="@android:color/black"
                 android:id="@+id/textViewForPieceForCheckoutFromCart"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:text="60"
-                android:textSize="22sp"
+                android:text="1"
+                android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/PlusButton"
                 app:layout_constraintStart_toEndOf="@+id/MinusButton"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Button
+                android:gravity="center"
                 android:id="@+id/PlusButton"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="37dp"
+                android:layout_height="37dp"
                 android:background="@drawable/round_minus_plus_button_for_cart_activity"
                 android:text="+"
-                android:textSize="30dp"
+                android:backgroundTint="@color/colorAccent"
+                android:textColor="@color/cakoAppIcon_background"
+                android:textSize="24sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/textViewForPieceForCheckoutFromCart"

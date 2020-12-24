@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@android:color/white"
+    android:background="#676363"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -13,12 +13,13 @@
         android:layout_height="wrap_content">
 
         <androidx.appcompat.widget.Toolbar
+            android:background="#676363"
             android:id="@+id/toolbarForSettingActivity"
             android:layout_width="match_parent"
             app:title="Settings"
             android:layout_height="50dp"
-            app:titleTextAppearance="@style/AppThemeForDark1"
-            app:titleTextColor="@android:color/black" />
+            app:titleTextAppearance="@style/AppThemeForDark2"
+            app:titleTextColor="@android:color/white" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -28,7 +29,7 @@
         android:layout_height="1dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:background="#F87603"
+        android:background="@android:color/white"
         android:layout_marginTop="50dp"/>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -46,10 +47,11 @@
             android:layout_height="wrap_content"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="10dp"
             app:layout_constraintTop_toTopOf="parent">
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_marginBottom="10dp"
+                android:background="#676363"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10dp">
@@ -63,9 +65,11 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.022"
-                    app:srcCompat="@drawable/ic_outline_color_lens_24" />
+                    app:srcCompat="@drawable/ic_outline_color_lens_24"
+                    app:tint="@android:color/white" />
 
                 <TextView
+                    android:textColor="@android:color/white"
                     android:id="@+id/textViewForAddress"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -79,6 +83,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:layout_marginTop="10dp"
             android:id="@+id/cardViewForFaq"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -89,9 +94,11 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="#676363"
                 android:padding="10dp">
 
                 <ImageView
+                    app:tint="@android:color/white"
                     android:id="@+id/imageViewForFaq"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
@@ -110,6 +117,7 @@
                     android:text="FAQ's &amp; Privacy Policy"
                     android:textSize="15sp"
                     android:textStyle="bold"
+                    android:textColor="@android:color/white"
                     app:layout_constraintStart_toEndOf="@+id/imageViewForFaq"
                     app:layout_constraintTop_toTopOf="@id/imageViewForFaq" />
 

@@ -2,6 +2,7 @@
 <resources>
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#F0EEEF</color>
+    <color name="colorPrimaryDark2">#1C1B1C</color>
     <color name="cakoLogoBackground">#120801</color>
     <color name="colorAccent">#F57F17</color>
     <color name="CakoColorForLaunchScreen">#270949</color>
@@ -11,6 +12,13 @@
     <color name="ColorForTabMenu">#6C5637</color>
     <color name="ColorForTextViewBackgroundForLongClickAct">#FDD787</color>
     <color name="SkinColor">#FCD788</color>
+    <color name="BrownUsed">#473D2C</color>
+    <color name="TextColorForLogSign">#CFBCB1</color>
+    <color name="ColorForLoginIcon">#EF5100</color>
+    <color name="ColorForBackgroundInCard">#F4EDE9</color>
+
+
+
 
 
 </resources>

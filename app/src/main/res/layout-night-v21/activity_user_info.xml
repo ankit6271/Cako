@@ -4,47 +4,52 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white"
+    android:background="#676363"
     tools:context=".UserInfoActivity">
 
     <androidx.cardview.widget.CardView
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content"
         android:id="@+id/cardView2"
         android:layout_width="match_parent"
-        android:layout_height="110dp"
-        android:layout_marginBottom="30dp"
-        android:background="@android:color/white"
+        android:background="#676363"
         android:elevation="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:background="#676363"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp">
+            android:layout_height="wrap_content">
 
             <TextView
+                android:background="#676363"
                 android:id="@+id/nameOfUser"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
-                android:textColor="@android:color/black"
+                android:textColor="@android:color/white"
                 android:textSize="24sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
+                android:background="#676363"
                 android:id="@+id/emailIdofUser"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="14dp"
                 android:textSize="15sp"
+                android:textColor="@android:color/white"
                 app:layout_constraintBaseline_toBaselineOf="@+id/phoneNoOfUser"
                 app:layout_constraintStart_toEndOf="@+id/phoneNoOfUser" />
 
             <TextView
+                android:textColor="@android:color/white"
+                android:background="#676363"
                 android:id="@+id/phoneNoOfUser"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -58,12 +63,13 @@
     </androidx.cardview.widget.CardView>
 
     <TextView
+        android:layout_marginTop="30dp"
         android:id="@+id/divider"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:background="@color/colorAccent"
+        android:background="@android:color/white"
         app:layout_constraintTop_toBottomOf="@+id/cardView2" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -84,11 +90,14 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:background="#676363"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10dp">
 
                 <ImageView
+                    app:tint="@android:color/white"
+                    android:backgroundTint="@android:color/white"
                     android:id="@+id/imageViewForAddress"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
@@ -100,6 +109,7 @@
                     app:srcCompat="@drawable/ic_outline_home_24" />
 
                 <TextView
+                    android:textColor="@android:color/white"
                     android:id="@+id/textViewForAddress"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -111,6 +121,7 @@
                     app:layout_constraintTop_toTopOf="@id/imageViewForAddress" />
 
                 <ImageView
+                    app:tint="@android:color/white"
                     android:id="@+id/arrowButtonInAddress"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
@@ -250,9 +261,11 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="#676363"
                 android:padding="10dp">
 
                 <ImageView
+                    app:tint="@android:color/white"
                     android:id="@+id/imageViewForSettings"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
@@ -271,12 +284,14 @@
                     android:text="Settings"
                     android:textSize="15sp"
                     android:textStyle="bold"
+                    android:textColor="@android:color/white"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/imageViewForSettings"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.444" />
 
                 <ImageView
+                    app:tint="@android:color/white"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:layout_marginEnd="10dp"
@@ -298,10 +313,11 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
-        android:background="@color/colorAccent"
+        android:background="@android:color/white"
         app:layout_constraintTop_toBottomOf="@+id/constraintForPayment" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginTop="15dp"
         android:id="@+id/constraintLayoutForAbouCakoText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -318,9 +334,9 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:background="#676363"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp">
+                android:layout_height="wrap_content">
 
                 <TextView
                     android:id="@+id/textViewForHelp"
@@ -329,6 +345,7 @@
                     android:layout_marginStart="20dp"
                     android:text="About CAKO"
                     android:textSize="15sp"
+                    android:textColor="@android:color/white"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -338,6 +355,7 @@
 
 
                 <ImageView
+                    app:tint="@android:color/white"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:layout_marginEnd="20dp"
@@ -356,7 +374,7 @@
         android:id="@+id/constraintLayoutForLogInLogoutInUser"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="6dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayoutForAbouCakoText">
@@ -370,11 +388,12 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:background="#676363"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp">
+                android:layout_height="wrap_content">
 
                 <TextView
+                    android:textColor="@android:color/white"
                     android:id="@+id/textViewForLogInLogout"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -396,7 +415,8 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/ic_baseline_power_settings_new_24" />
+                    app:srcCompat="@drawable/ic_baseline_power_settings_new_24"
+                    app:tint="@android:color/white" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -407,7 +427,7 @@
         android:fontFamily="@font/playfair_display_bold_italic"
         android:gravity="center_vertical|center_horizontal"
         android:text="@string/CakoCakeryShop"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/white"
         android:textSize="20.5sp"
         app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView" />
 

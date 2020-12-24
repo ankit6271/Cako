@@ -14,5 +14,14 @@
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="about_cako"><b>Objective:</b> The objective of CAKO is to bring the cake shop online and provide customers with best quality hygienic cakes\n\n<b>Scope:</b> This application is a step to reduce the efforts of customer purchasing cakes from shops, that would let them to select the best designed cake with more and more variations.\n\n<b>Why CAKO:</b> Whenever a person needs to buy a cake he/she have to go outside and then choose the cake with less no. of designs being available at the shop at that time which can be very challenging for the customers who want more beautifully designed cakes to select one among the cake available at the shop. The main motive of CAKO is to bring the cake shop online on our mobile phones which we think can boost up the cake business and customers are provided with many variants and designs of cake which being not available at the shop. What going to make CAKO the best choice for ordering cakes. \n  Next day or same day delivery.\n  You can also avail fixed-time delivery or morning delivery of cakes to ensure your love and emotions are delivered to your dear ones on-time.\n  Customer Support Service.\n  Contactless Delivery.</string>
+    <string name="title_activity_signin">SigninActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
 
 </resources>

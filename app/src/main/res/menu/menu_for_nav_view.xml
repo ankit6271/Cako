@@ -1,21 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <group
-        android:id="@+id/group_for_app_drawer"
-        android:checkableBehavior="none">
-        <item
-            android:id="@+id/home_nav_view"
-            android:icon="@drawable/ic_baseline_home_24"
-            android:title="Home" />
-        <item
-            android:id="@+id/orderHistory_nav_view"
-            android:icon="@drawable/ic_baseline_history_24"
-            android:title="Order History" />
-    </group>
     <item
-        android:id="@+id/invite_nav_view"
-        android:icon="@drawable/ic_baseline_person_add_24"
-        android:title="Invite Friend" />
+        android:id="@+id/home_nav_view"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home" />
     <item
         android:id="@+id/settings_nav_view"
         android:icon="@drawable/ic_baseline_settings_24"
@@ -25,3 +13,19 @@
         android:icon="@drawable/ic_baseline_help_outline_24"
         android:title="Help Center/FAQ's" />
 </menu>
+
+    <!--    <group-->
+    <!--        android:id="@+id/group_for_app_drawer"-->
+    <!--        android:checkableBehavior="none">-->
+    <!--        <item-->
+    <!--            android:id="@+id/orderHistory_nav_view"-->
+    <!--            android:icon="@drawable/ic_baseline_history_24"-->
+    <!--            android:title="Order History" />-->
+<!--<item=home-->
+    <!--    </group>-->
+    <!--    <item-->
+    <!--        android:id="@+id/invite_nav_view"-->
+    <!--        android:icon="@drawable/ic_baseline_person_add_24"-->
+    <!--        android:title="Invite Friend" />-->
+<!--Item Setting and helpcenter-->
+

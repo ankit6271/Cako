@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark">
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBar"
@@ -16,8 +16,9 @@
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="?android:attr/actionBarSize"
-            android:background="@color/colorPrimaryDark">
+            android:layout_height="50dp"
+            app:titleTextAppearance="@style/toolbarStyle"
+            app:titleTextColor="@android:color/black">
 
         </androidx.appcompat.widget.Toolbar>
 
@@ -71,7 +72,9 @@
                 app:layout_constraintStart_toStartOf="parent" />
 
             <EditText
+                android:visibility="gone"
                 android:id="@+id/searchEditText"
+                android:textSize="15sp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
@@ -79,10 +82,10 @@
                 android:layout_marginBottom="35dp"
                 android:background="@drawable/edittext_design"
                 android:drawableLeft="@drawable/ic_baseline_search_24"
-                android:drawablePadding="5dp"
+                android:drawablePadding="6dp"
                 android:hint="Search"
                 android:maxLines="1"
-                android:textColor="@android:color/black"
+                android:textColor="@android:color/white"
                 android:textColorHint="@android:color/black"
                 app:layout_constraintBottom_toTopOf="@+id/recyclerViewForCakeTypes"
                 app:layout_constraintStart_toStartOf="parent"
@@ -157,7 +160,6 @@
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView6"
-
                 tools:context=".FirstActivity">
 
             </androidx.recyclerview.widget.RecyclerView>

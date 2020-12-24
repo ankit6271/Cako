@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="178dp"
+    android:layout_width="188dp"
     android:background="@android:color/holo_orange_light"
-    android:layout_height="240dp">
+    android:layout_height="265dp">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardViewForHorizontalInFirst"
-        android:layout_width="168dp"
-        android:layout_height="230dp"
+        android:layout_width="179dp"
+        android:layout_height="256dp"
         android:elevation="10dp"
         android:padding="10dp"
         app:cardBackgroundColor="@android:color/white"
@@ -31,36 +31,38 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/textViewForItem"
                 android:layout_alignParentStart="true"
-                android:layout_marginTop="6dp"
-                android:layout_marginBottom="6dp"
-                android:fontFamily="@font/playfair_display_bold_italic"
-                android:textSize="16dp" />
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:textColor="@android:color/black"
+                android:textSize="13sp" />
 
             <TextView
                 android:layout_marginStart="10dp"
                 android:id="@+id/textViewforPrice"
+                android:textColor="@android:color/black"
+                android:text="3333"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/textViewForPieceInfo"
                 android:layout_alignParentStart="true"
-                android:fontFamily="@font/playfair_display_bold_italic"
-                android:textSize="16dp" />
+                android:textSize="13sp" />
 
             <ImageView
                 android:layout_marginStart="3dp"
                 android:layout_marginEnd="3dp"
                 android:id="@+id/imageView"
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="130dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="8dp"
                 android:background="@color/cakoAppIcon_background"
                 android:foregroundGravity="center_horizontal"
                 android:scaleType="fitXY" />
 
             <TextView
+                android:fontFamily="@font/playfair_display_bold_italic"
                 android:id="@+id/textViewForItem"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -68,15 +70,14 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginStart="5dp"
-                android:layout_marginTop="4dp"
+                android:layout_marginTop="2dp"
                 android:layout_marginEnd="5dp"
                 android:ellipsize="end"
-                android:fontFamily="@font/playfair_display_bold_italic"
                 android:gravity="center"
-                android:maxLines="1"
-                android:text="Great"
+                android:maxLines="2"
+                android:text="Grea233333333333333333t"
                 android:textColor="@android:color/black"
-                android:textSize="18sp" />
+                android:textSize="16sp" />
 
 
         </RelativeLayout>
@@ -86,6 +87,7 @@
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingActionButton"
         android:layout_width="wrap_content"
+        android:tooltipText="@string/CakoCakeryShop"
         android:layout_height="wrap_content"
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="17dp"

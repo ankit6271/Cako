@@ -3,6 +3,7 @@ package com.example.cako;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -10,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -29,6 +31,7 @@ import java.util.Set;
 
 public class FaqActivity extends AppCompatActivity {
     LinkedHashMap<String, String> hashMap;
+    String string,string2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +44,11 @@ public class FaqActivity extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         assert actionBar != null;
         actionBar.setDisplayHomeAsUpEnabled(true);
+
+        Intent intent=getIntent();
+        string=intent.getStringExtra("IntentGoing");
+        string2=intent.getStringExtra("IntentComingFrom");
+
 
         hashMapForFaq();
 
@@ -81,6 +89,21 @@ public class FaqActivity extends AppCompatActivity {
         hashMap.put(k8, v8);
         hashMap.put(k9, v9);
         hashMap.put(k10,v10);
+    }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        if(string.equals("FirstActivity")){
+            Intent i=new Intent(FaqActivity.this,FirstActivity.class);
+            startActivity(i);
+            finish();
+        }
+        else if (string.equals("SettingsActivity")){
+            Intent i=new Intent(FaqActivity.this,SettingsActivity.class);
+            i.putExtra("IntentGoing",string2);
+            startActivity(i);
+            finish();
+        }
     }
 }
 
@@ -125,4 +148,5 @@ class RecyclerViewForFaq extends RecyclerView.Adapter<RecyclerViewForFaq.Holder>
             textViewForAnswer = itemView.findViewById(R.id.textViewForAnswers);
         }
     }
+
 }
